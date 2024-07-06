@@ -3,7 +3,7 @@ import { getToken } from "../context/AuthContext";
 import { removeToken } from "../context/AuthContext";
 import { api_uri, main_api_path } from "../configs/mainConfigs";
 
-export const mainUrl = () => "https://api.qayiq.uz";
+export const mainUrl = () => "http://localhost:3001/";
 
 const mainApiInstence = axios.create({
   baseURL: mainUrl() + "/v1/api",
@@ -31,6 +31,7 @@ mainApiInstence.interceptors.response.use(
         "Internet bilan bog'liq muammo. Internetni tekshiring yoki dasturchiga bog'laning";
     } else if (err?.response?.status === 401 || err?.response?.status === 403) {
       removeToken();
+      window.location.href = "/login";
       if (typeof window !== "undefined") {
         window.location.href = `/auth/login?redirect=${window.location.pathname}`;
       }
