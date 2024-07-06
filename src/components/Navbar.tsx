@@ -20,7 +20,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center space-x-2 lg:space-x-4">
-          <a className="text-sm text-gray-500 leading-none" href="/submit">
+          <a className="text-sm text-gray-500 leading-none" href="/signup">
             Submit
           </a>
 
