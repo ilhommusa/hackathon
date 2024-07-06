@@ -4,7 +4,7 @@ export default function Tools() {
   return (
     <div>
       <div className="max-w-7xl mx-auto px-4 lg:px-6 mb-6">
-        <form method="GET" action="https://1000.tools" data-turbo-stream="">
+        <form method="GET" data-turbo-stream="">
           <div className="w-full bg-gray-100 rounded-full flex items-center">
             <input
               name="query"
@@ -23,7 +23,7 @@ export default function Tools() {
         >
           <a
             className="relative flex items-center md:p-3 md:bg-gray-50 md:hover:shadow md:rounded-lg"
-            href="https://1000.tools/podifyio"
+            href="/"
             target="_top"
           >
             <div className="flex-none mr-3 rounded-none w-16 h-16 overflow-hidden">
