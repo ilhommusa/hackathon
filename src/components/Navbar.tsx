@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="h-16 max-w-7xl mx-auto flex items-center justify-between px-4 lg:px-6 mb-8">
         <div className="flex items-center space-x-4">
           <a className="shrink-0" href="/">
-            Ilkhom Tool's
+            Ilkhom Tool&apos;s
           </a>
 
           {/* <div className="hidden lg:flex items-center space-x-1.5">

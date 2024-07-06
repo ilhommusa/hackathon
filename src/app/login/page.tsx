@@ -25,11 +25,8 @@ export default function Login() {
               </button>
 
               <div className="w-full space-x-3 text-center mt-3 items-center">
-                <span>Don't have an account?</span>
-                <a
-                  className="text-center w-full text-blue-500"
-                  href="/signup"
-                >
+                <span>Don&apos;t have an account?</span>
+                <a className="text-center w-full text-blue-500" href="/signup">
                   Sign up
                 </a>
               </div>
